@@ -2,8 +2,8 @@ require_relative '../lib/alphabet_frequency'
 
 def user_menu
 	puts
-	puts "Enter string"
-	puts "Press 'q/Q' and then enter key to quit"
+	puts 'Enter string'
+	puts 'Press \'q/Q\' and then enter key to quit'
 	puts
 end
 
