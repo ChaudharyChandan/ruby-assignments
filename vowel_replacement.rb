@@ -1,6 +1,6 @@
 class VowelReplacement
     def replace_vowels(string, char)
-        string.gsub(/a|A|e|E|i|I|o|O|u|U/, char)
+        string.gsub(/[aeiou]/i, char)
     end
 end
 
