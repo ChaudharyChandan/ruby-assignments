@@ -1,9 +1,8 @@
 class Array
-  def get_length_wise_hash
-    hash = Hash.new { |h, k| h[k] = [] }
-    for element in self
+  def length_wise_hash
+    self.inject( Hash.new { |h, k| h[k] = [] } ) do | hash, element |
       hash[element.to_s.length] << element
+      hash
     end
-    hash
   end
 end
