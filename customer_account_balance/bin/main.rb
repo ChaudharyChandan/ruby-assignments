@@ -7,6 +7,6 @@ puts customer1
 
 customer2 = Customer.new("Amit Choudhary", 1000)
 customer2.deposit(2300)
-customer2.withdraw(200)
+customer2.withdraw(-200)
 puts customer2
 

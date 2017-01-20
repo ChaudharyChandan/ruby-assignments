@@ -10,11 +10,17 @@ class Customer
   end
 
   def deposit(amount)
-    @balance += amount
+    if amount < 0
+      puts "Can't deposit negative amount"
+    else
+      @balance += amount
+    end
   end
 
   def withdraw(amount)
-    if @balance >= amount
+    if amount < 0
+      puts "Can't withdraw negative amount"
+    elsif @balance >= amount
       @balance -= amount
     else
       puts "Can't withdraw more than balance"
