@@ -1,5 +1,4 @@
-require_relative '../lib/fibonacci_series'
+require_relative '../lib/integer'
 
-fs = FibonacciSeries.new
-fs.series_upto(1000) { | num | print num, " " }
+1000.fibonacci_series_upto { | num | print num, " " }
 puts
