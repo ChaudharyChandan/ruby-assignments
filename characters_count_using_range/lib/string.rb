@@ -1,6 +1,6 @@
-class Array
+class String
   def group_character_count
-    inject( Hash.new(0)) do | hash, element |
+    split('').inject(Hash.new(0)) do | hash, element |
       case element
       when '0'..'9'
         hash[:digits] += 1;
