@@ -1,6 +1,7 @@
 class String
   def group_character_count
-    split('').inject(Hash.new(0)) do | hash, element |
+    hash = Hash.new(0)
+    each_char do | element |
       case element
       when '0'..'9'
         hash[:digits] += 1;
@@ -11,8 +12,8 @@ class String
       when '!'..'~'
         hash[:special] += 1;
       end
-      hash
     end
+    hash
   end
 end
 
